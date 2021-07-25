@@ -2,7 +2,7 @@
 
 ![tokyo](https://stillmed.olympics.com/media/Images/OlympicOrg/News/2016/04/25/25-04-16-tokyo-logo-thumbnail.jpg?interpolation=lanczos-none&resize=1413:800)
 
-Simple Flask or ApiGateway + Lambda powered implementation of an endpoint that returns the current Tokyo Olympic rankings in a JSON format. 
+Simple Flask or ApiGateway + Lambda powered implementation of an endpoint that returns the current Tokyo Olympic rankings and medal tallys in a JSON format. 
 
 Data source is the [Official Olympic Site](https://olympics.com/tokyo-2020/olympic-games/en/results/all-sports/medal-standings.htm)
 
