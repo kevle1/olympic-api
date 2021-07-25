@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  olympic-api
+
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+  OlympicFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: olympic/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      Events:
+        Olympic:
+          Type: Api 
+          Properties:
+            Path: /api/olympic/rankings
+            Method: get
+
+Outputs:
+  OlympicAPI:
+    Description: "API Gateway endpoint URL for olympic rankings"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/api/olympic/rankings"
+  OlympicFunction:
+    Description: "Olympic Ranking Lambda Function ARN"
+    Value: !GetAtt OlympicFunction.Arn
