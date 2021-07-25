@@ -41,9 +41,8 @@ def get_country(country, rankings):
     try:
         if len(country) == 3:
             for country_ranking in rankings:
-                if country == country_ranking['country_alpha3']:
+                if country.lower() == country_ranking['country_alpha3'].lower():
                     return country_ranking
-        
         return rankings
     except Exception as e:
         logging.error(f'Error: Request for country failed -> {e}')

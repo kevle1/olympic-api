@@ -1,6 +1,5 @@
 import json
 import requests
-import time
 from bs4 import BeautifulSoup
 
 PAGE_URL = 'https://olympics.com/tokyo-2020/olympic-games/en/results/all-sports/medal-standings.htm'
