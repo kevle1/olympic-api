@@ -12,13 +12,13 @@ Base URL, currently hosted on AWS EC2: http://3.25.134.23/
 
 **Get the entire ranking table:** 
 
-E.g. [http://___/api/olympic/rankings](http://3.25.134.23/api/olympic/rankings)
+http://3.25.134.23/api/olympic/rankings
 
 **Retrieve country current standings:** 
 
 Using [ISO Alpha 3 Country Codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)
 
-E.g. [http://___/api/olympic/rankings?country=AUS](http://3.25.134.23/api/olympic/rankings)
+http://3.25.134.23/api/olympic/rankings?country=AUS
 
 
 ## Example Response 
