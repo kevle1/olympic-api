@@ -8,17 +8,21 @@ Data source: [Official Olympic Site](https://olympics.com/tokyo-2020/olympic-gam
 
 ## Usage 
 
-Endpoint currently hosted on AWS EC2 for free use: http://3.25.134.23/ 
+~~Endpoint currently hosted on AWS EC2 for free use: http://3.25.134.23/~~
+
+Heres to the end of another Olympics. Repository has now been archived :) 
+
+Totaled 38,000+ hits to the API over the course of the Olympics. 
 
 **Get the entire ranking table:** 
 
-http://3.25.134.23/api/olympic/rankings
+http://example.com/api/olympic/rankings
 
 **Retrieve country current standings:** 
 
 Using [ISO Alpha 3 Country Codes](https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes)
 
-http://3.25.134.23/api/olympic/rankings?country=AUS
+http://example.com/api/olympic/rankings?country=AUS
 
 ## Example Response 
 
